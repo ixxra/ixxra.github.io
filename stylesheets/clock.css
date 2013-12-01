@@ -1,0 +1,98 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  padding: 10px;
+}
+
+body {
+  font: 150 35px/1 'Lato', sans-serif;
+  color: #777;
+  background: #eee;
+  background-image:url('../images/tiling.png');
+}
+
+a {
+    text-decoration: none;
+    color: #777;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.clock {
+  position: relative;
+  font-size: xx-large;
+  top: 25%;
+  left: 50%;
+  width: 500px;
+  margin-top: -45px;
+  margin-left: -200px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.clock span {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+}
+
+.clock span:nth-child(3),
+.clock span:nth-child(5),
+.clock span:nth-child(7) {
+  border-left: 1px solid #aaa;
+}
+
+.clock span:before,
+.clock span:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+  transition: transform .75s;
+}
+
+.clock span:before {
+  content: attr(data-old);
+  z-index: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.clock .flip:before {
+  transform: translate3d(0, 102.5%, 0);
+}
+
+.clock span:after {
+  content: attr(data-now);
+  z-index: 2;
+  transform: translate3d(0, -102.5%, 0);
+}
+
+.clock .flip:after {
+  transform: translate3d(0, 0, 0);
+}
+
+
+#container {
+    padding: 25px;
+    height: 95%;
+    border: 2px solid;
+    border-radius: 25px;
+    background-color: rgba(0, 255, 0, 0.15);
+}
+
+
+
+
+
+
+
