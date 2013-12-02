@@ -421,3 +421,18 @@ Small Device Styles
   }
 
 }
+
+ul.social {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.social li{
+    display: inline;
+}
+
+ul.social a {
+    display: block;
+    width: 60px;
+}

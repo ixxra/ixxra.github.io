@@ -90,7 +90,21 @@ a:hover {
     background-color: rgba(0, 255, 0, 0.15);
 }
 
+ul.social {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
 
+ul.social li{
+    display: inline;
+}
+
+ul.social a {
+    display: block;
+    width: 60px;
+}
 
 
 

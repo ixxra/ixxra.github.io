@@ -55,7 +55,9 @@ var Clock = (function(){
 }());
 var i=0,clocks = document.querySelectorAll('.clock'),l=clocks.length;
 new Clock(clocks[0], 11, 24)
-
+var lapse = toBday(11, 24);
+console.log(lapse);
+document.title = lapse.days + ' dias para el cumpleaños de Duca Delfin Ares';
 //for (;i<l;i++) {
 //  new Clock(clocks[i]);
 //}
