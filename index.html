@@ -1,27 +1,14 @@
 ---
+layout: base
+title: Home page of Rene Garcia (ixxra)
 ---
-<!DOCTYPE html>
-<html>
+{% include nav.html %}
+{% include header.html %}
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Ixxra.github.io : Personal homepage on github" />
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Homepage of Rene Garcia (ixxra)</title>
-  </head>
-
-  <body>
-    <!-- HEADER -->
-    {% include header.html %}
-</div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-      <h2>About Me</h2>
-      <p>
+<section id="main_content" class="inner">
+    <h2>About Me</h2>
+    <p>
           I'm an applied mathematician working in <a href="http://www.matematicas.uady.mx">Universidad Autonoma de Yucatan</a>.
           I enjoy solving applied problems, and learning programming languages, as you can see from my <a href="http://github.com/ixxra">Github frontpage</a>. I collaborate actively with the physics olympiad trainers in my home country.  
       </p>
@@ -43,16 +30,6 @@
           </ul>
       </p>
       </section>
-    </div>  
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
-</html>
+    {% include footer.html %}
