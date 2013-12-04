@@ -16,10 +16,13 @@
 </head>
 
 <body>
-  <div id="main_content_wrap" class="container">
+    {% include nav.html %}
+    
+  <div class="container">
       
       {{ content }}    
       
   </div>
+  {% include footer.html %}
 </body>
 </html>
