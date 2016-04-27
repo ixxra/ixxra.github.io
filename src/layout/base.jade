@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Planet Ixxra
+    link(rel="stylesheet" href="stylesheets/main.css?q=123")
+  
+  body
+    div.row
+      div.mainContent
+        :markdown
+          #Summary
+          
+          I'm an applied mathematician working in [Universidad Autonoma de Yucatan](http://www.matematicas.uady.mx).
+          I enjoy solving applied problems, and learning programming languages, as you can see from my [Github frontpage](http://github.com/ixxra)
+
+        
+        ul.thumbsgrid
+          each resource in socialMe
+            li
+              if resource.img
+                a(href=resource.url).thumbnail
+                  img(src=resource.img, alt=resource.desc).logo
+              else
+                a(href=resource.url) #{resource.desc}
+      div.sideWidgets
+        block widgets
+          include twitter.jade

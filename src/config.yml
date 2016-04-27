@@ -1,0 +1,23 @@
+socialMe:
+  - desc: Linkedin
+    url: https://mx.linkedin.com/in/ixxra
+    img: assets/img/ln.png
+  - desc: Github
+    url: https://github.com/ixxra
+    img: assets/img/github.png
+  - desc: "@renegarxia"
+    url: https://twitter.com/renegarxia
+    img: assets/img/twitter.png
+  - desc: About me
+    url: https://about.me/ixxra
+    img: assets/img/me.png
+  - desc: Tumblr
+    url: http://ixxra.tumblr.com/
+    img: assets/img/tumblr.png
+  - desc: Academia.edu
+    url: https://uady.academia.edu/ixxra
+  - desc: Research Gate
+    url: https://www.researchgate.net/profile/Rene_Garcia3
+#  - desc: Email
+#    url: mailto:garciamx@gmail.com
+#    img: assets/img/gmail.png

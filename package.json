@@ -1,0 +1,23 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "My homepage",
+  "main": "index.js",
+  "scripts": {
+    "server": "node scripts/server.js",
+    "buildMarkup": "node scripts/buildMarkup.js",
+    "buildStylesheet": "node scripts/buildStylesheet"
+  },
+  "author": "Rene Garcia",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "jade": "^1.11.0",
+    "js-yaml": "^3.6.0",
+    "jstransformer-markdown": "^1.1.0",
+    "markdown": "^0.5.0",
+    "markdown-it": "^6.0.1",
+    "node-static": "^0.7.7",
+    "pug": "^0.1.0"
+  }
+}
